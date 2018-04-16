@@ -1,8 +1,18 @@
-//  $(document).ready(function(){
-//    $('.slider').bxSlider();
-  //});
+$(document).ready(function(){
+ $('.slider').bxSlider();
+});
 
-  var basic_choropleth = new Datamap({
+var mapboxAccessToken = {your access token here};
+var map = L.map('map').setView([37.8, -96], 4);
+
+L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=' + mapboxAccessToken, {
+    id: 'mapbox.light',
+    attribution: ...
+}).addTo(map);
+
+L.geoJson(statesData).addTo(map);
+
+  /*var basic_choropleth = new Datamap({
   element: document.getElementById("basic_choropleth"),
   projection: 'mercator',
   fills: {
@@ -34,7 +44,6 @@ window.setInterval(function() {
 }, 2000);
 
 
-/*
 function myMap() {
 loadmap();
 
@@ -60,7 +69,7 @@ var marker = new google.maps.Marker({
 }
 function loadmap1()
 {
-  //AIzaSyC7G4tirS4p57ekFlthWBhgESCto1HeVXo
+  AIzaSyC7G4tirS4p57ekFlthWBhgESCto1HeVXo
   var mapboxAccessToken = {pk.eyJ1IjoibW9yZ2FubWFubiIsImEiOiJjamZvYmhmaXowb2Y4MndwZThmeXoxY2R1In0.KeGv6hRJCa13ZhpvWBvFkQ};
 var map = L.map('map').setView([37.8, -96], 4);
 
@@ -72,4 +81,4 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token='
 L.geoJson(statesData).addTo(map);
 
 }
-*/
+/*
