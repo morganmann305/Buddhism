@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Poor+Story');
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
 
 
 body {
-  font-size: 20px;
-  font-family: 'Poor Story', sans-serif; 
-  color: rgb(70,56,43);
+  font-size: 25px;
+  font-family: 'Titillium Web', sans-serif;
+  color: grey;
   background: url('../images/spiration_dark.png');
   width: 960px;
   margin: 0 auto;
@@ -49,8 +49,8 @@ nav a:active {
 }
 
 p {
-  margin-top: 30px;
-  margin-bottom: 30px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 #container {
@@ -64,4 +64,17 @@ p {
 
 #links {
   margin-top: 50px;
+}
+
+#map {
+  width: 600px;
+  height: 400px;
+}
+
+#scale {
+  margin-top: 20px;
+}
+
+#footer {
+  margin-top: 40px;
 }

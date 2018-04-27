@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8"/>
+<title>Welcome to Buddha World!</title>
+<link href="css/buddhism.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/jquery.bxslider.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/jquery.bxslider.min.js"></script>
+<script src="js/buddhism.js"></script>
+
+<script>
+  $(document).ready(function(){
+    $('.slider').bxSlider();
+  });
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7G4tirS4p57ekFlthWBhgESCto1HeVXo">
+    </script>
+
+
+
+</head>
+
+<body>
+<div id="container">
+<header class="center">
+<h1 class="space">Buddhism 101</h1>
+</header>
+
+
+<nav id="links">
+<ul>
+<li><a href="#map_title">Map</a></li>
+<li><a href="#photo_gallery">Photo Gallery</a></li>
+<li><a href="#history_of_buddhism">History of Buddhism</a></li>
+<li><a href="#buddha_statue">Buddha Statue</a></li>
+</ul>
+</nav>
+
+<main>
+
+<section id="map_title">
+
+<h2>Buddhists Around the World</h2>
+<div style="width:100%;">
+
+  <div id="map" style="height: 600px; width: 80%;float:left"></div>
+  <img id="scale" src="images/buddhists_scale.png" style="margin-left: 2%;float:left;width:17%;"></img>
+
+
+</div>
+</section>
+
+<!--source: Map Data - http://www.pewforum.org/2012/12/18/table-religious-composition-by-country-in-percentages/-->
+
+
+
+
+<section id="photo_gallery" style="clear: left;padding-top:50px;">
+<div class="space">
+<h1 class="space">Photo Gallery</h1>
+<p>These pictures show the common rituals practiced by Buddhists.</p>
+
+<!-- Slider HTML (change this to your own!)-->
+
+<div class="slider">
+  <div>
+    <img src="images/buddhist_monk_meditating.jpg" width="100%" alt="Buddha"></img>
+    <div class="text">This is a Buddhist monk or "Bhikkhu" meditating. Buddhists meditate to achieve Nirvana.</div>
+	</div>
+  <div>
+		<img src="images/mudra.jpg" width="100%" alt="Mudra" ></img>
+		<div class="text">This hand gesture is known as a "mudra." Mudras are used during meditation to symbolize Buddhism beliefs or represent certain gods.</div>
+ </div>
+
+ <div>
+		<img src="images/prayer_wheels.jpg" width="100%" alt="Prayer Wheels" ></img>
+		<div class="text">These prayer wheels are cylinders with written mantras inside of them and Buddhists spin them. A mantra is like a scripture. Prayer wheels are used by Buddhists when they don't want to recite the mantras.</div>
+
+ </div>
+
+ <div>
+		<img src="images/sarnath_pilgrimage.jpg" width="100%" alt="Sarnath" ></img>
+		<div class="text">Buddhists sometimes do pilgrimages, which are journeys to a religious site. This is Sarnath in India where many Buddhists travel to for their pilgrimage. Sarnath is the first place where Buddha started teaching people dhamma or dharma, which are religious laws.</div>
+ </div>
+
+ <!--sources: Images - pixabay.com, Buddhism Rituals Info -  https://buddhists.org/buddhist-symbols/buddhist-rituals-from-mantras-to-mudras/-->
+
+</section>
+
+
+<section id="history_of_buddhism">
+<h2 class="space">History of Buddhism</h2>
+<article>
+  <p>Buddhism was founded in the 6th century B.C.E. by Siddhartha Gautama. Gautama is also known as Buddha. Buddha was born in Lumbini, which is now known as Nepal.</p>
+
+  <p>Buddha taught people dhamma or dharma, which are his religious laws and he started teaching people in Sarnath, India. Buddha influenced some of the laws in Hinduism, which is a prominent religion in India. When Buddha started teaching dhamma or dharma in India, it is when the Hindu ideal of renunciation of family and friends became well known. Renunciation means that a person will stop holding on to worldly pleasures.</p>
+
+  <p>Legend claims that when Buddha was a child, he went on four chariot rides where he saw human suffering: old age, illness, death and a person who rejected Asceticism. Asceticism is the abstinence of sensual pleasures.<p>
+
+  <p>Since Buddha was the son of a king and queen, he saw the contrast of his life with the people who were suffering. Therefore, he decided that life's pleasures were temporary and masked human suffering.<p>
+
+  <p>After Buddha got married, he decided to leave his wife and son and did renunciation in the forest by being away from his family and not eating. Doing this prevented him from holding on to wordly pleasures like the comfort of food and family.</p>
+
+  <p>After he almost starved to death, he realized he was creating more suffering for himself and ate food. He began to meditate and eventually he experienced Nirvana, which is also known as Enlightment. He learned the answers to the causes of his suffering and was released from it.</p>
+
+  <p>Nirvana is considered the goal for Buddhists. Nirvana is when the feelings of greed, hatred and delusion end. These emotions end when the Buddhist gains wisdom and the mind becomes peaceful.<p>
+
+   <p>Buddhism had a large decrease in followers in India around 12th century C.E., most likely because of the popularity of Hinduism, which is the main religion in India. Presently, Buddhism is seen as a religion mostly practiced in countries in East Asia like Cambodia, China and Japan even though its origins are from India.<p>
+   <!--sources: asiasociety.org, kadampa.org/reference/renunciation, buddhanet.net/e-learning/dharmadata/fdd43.htm-->
+
+</article>
+
+
+<section id="buddha_statue">
+<h2>Buddha Statue</h2>
+
+<p>Make Buddha any color you want!</p>
+
+<img src="images/buddha_statue.png" alt="Buddha Statue" ></img>
+
+<input type="color"/>
+
+<footer id="footer">Sources: Asia Society, Kadampa, Buddha Net, Buddhists, Pew Forum</footer>
+
+</body>
+</html>
