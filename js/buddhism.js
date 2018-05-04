@@ -1,6 +1,116 @@
 
     window.onload = function() {
 
+      var j=0;
+
+  var modal = document.getElementById('myModal');
+
+  // Get the button that opens the modal
+  var btn = document.getElementById("myBtn");
+
+  // Get the <span> element that closes the modal
+  var span = document.getElementsByClassName("close")[0];
+
+  // When the user clicks the button, open the modal
+  btn.onclick = function() {
+      modal.style.display = "block";
+  }
+
+  // When the user clicks on <span> (x), close the modal
+  span.onclick = function() {
+    //alert(j);
+    //alert(j);
+    if (j===0)
+    {
+
+    document.getElementById("m_title").innerHTML="Mantra #2";
+    document.getElementById("mantra").innerHTML="2) Om Mani Padme Hum";
+    document.getElementById("desc").innerHTML="The meaning is “Homage to the Jewel in the Lotus.";
+
+    j++;
+    }
+    else if (j==1)
+    {
+    document.getElementById("m_title").innerHTML="Mantra #3";
+    document.getElementById("mantra").innerHTML="3) Namo Amituofo";
+    document.getElementById("desc").innerHTML="This mantra helps Buddhists receive protection, have compassion for others and get strength to solve their problems.";
+    j++;
+    }
+    else if (j==2)
+    {
+      document.getElementById("m_title").innerHTML="Mantra #4";
+    document.getElementById("mantra").innerHTML="4) Om Muni Muni Mahāmuni Sākyamuni Svāhā";
+    document.getElementById("desc").innerHTML="This means 'Om wise one, wise one, great wise one, to the wise one of the Shakyans hail!'";
+    j++;
+    }
+
+    else if (j==3)
+    {
+      document.getElementById("m_title").innerHTML="Mantra #5";
+    document.getElementById("mantra").innerHTML="5) Oṃ Tāre Tuttāre Ture Svāhā";
+    document.getElementById("desc").innerHTML="Reciting this mantra helps Buddhists to receive protection, heal sickness and fix problems they have in their relationships.";
+    j++;
+    }
+    else if (j==4)
+    {
+      document.getElementById("m_title").innerHTML="Mantra #6";
+    document.getElementById("mantra").innerHTML="6) Oṃ Tāre Tuttāre Ture Mama Ayuḥ Punya Jñānā Puṣtiṃ Kuru Svāhā";
+    document.getElementById("desc").innerHTML="This mantra is recited to get the attention from the White Tara god, who promotes long life. Buddhists usually recite this mantra when they are sick.";
+    j++;
+    }
+   else if (j==5)
+    {
+      document.getElementById("m_title").innerHTML="Mantra #7";
+    document.getElementById("mantra").innerHTML="7) Om A Ra Pa Ca Na Dhih";
+    document.getElementById("desc").innerHTML="Reciting this mantra helps the Buddhist to gain wisdom and clarity so they can make good decisions.";
+    j++;
+    }
+
+    else if (j==6)
+    {
+      document.getElementById("m_title").innerHTML="Mantra #8";
+    document.getElementById("mantra").innerHTML="8) Tayata Om Bekanze Bekanze Maha BeKanze Radza Samudgate Soha";
+    document.getElementById("desc").innerHTML="This mantra means “Hail! Appear, O Healer, O Healer, O Great Healer, O King of Healing!” This helps get the attention of the Medicine Buddha who is also known as Bhaiṣajyaguru.";
+    j++;
+    }
+
+    else if (j==7)
+    {
+      document.getElementById("m_title").innerHTML="Mantra #9";
+    document.getElementById("mantra").innerHTML="9) Gate Gate Para Gate Parasam Gate Bodhi Svaha";
+    document.getElementById("desc").innerHTML="This means 'Going, going, going on beyond, always going on beyond, always becoming Buddha.'";
+    j++;
+    }
+    else if (j==8)
+    {
+      document.getElementById("m_title").innerHTML="Mantra #10";
+    document.getElementById("mantra").innerHTML="10) Nam Myoho Renge Kyo";
+    document.getElementById("desc").innerHTML="This mantra helps you think like Buddha would so you can reach Buddhahood";
+    j++;
+    }
+    else if(j==9)
+    {
+      document.getElementById("m_title").innerHTML="Mantra #1";
+      document.getElementById("mantra").innerHTML="1) Namo Tassa Bhagavato Arahato Samma Sambuddhassa";
+      document.getElementById("desc").innerHTML="TThis means, 'Honor to the Blessed One, the Exalted One, the fully Enlightened One.'";
+
+      //alert(j);
+      j=0;
+      //modal.style.display = "none";
+    }
+
+  //document.getElementById("mantra").innerhtml="hello mantra";
+
+     // modal.style.display = "none";
+  }
+
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+
 
 
       var locations = [
