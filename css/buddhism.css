@@ -69,10 +69,15 @@ p {
 #map {
   width: 600px;
   height: 400px;
+  width: 80%
+  float: left;
 }
 
 #scale {
   margin-top: 20px;
+  margin-left: 2%;
+  float: left;
+  width: 17%;
 }
 
 #footer {

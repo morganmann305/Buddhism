@@ -25,7 +25,7 @@
 
     document.getElementById("m_title").innerHTML="Mantra #2";
     document.getElementById("mantra").innerHTML="2) Om Mani Padme Hum";
-    document.getElementById("desc").innerHTML="The meaning is “Homage to the Jewel in the Lotus.";
+    document.getElementById("desc").innerHTML="The meaning is 'Homage to the Jewel in the Lotus.'";
 
     j++;
     }
@@ -85,14 +85,14 @@
     {
       document.getElementById("m_title").innerHTML="Mantra #10";
     document.getElementById("mantra").innerHTML="10) Nam Myoho Renge Kyo";
-    document.getElementById("desc").innerHTML="This mantra helps you think like Buddha would so you can reach Buddhahood";
+    document.getElementById("desc").innerHTML="This mantra helps you think like Buddha would so you can reach Buddhahood.";
     j++;
     }
     else if(j==9)
     {
       document.getElementById("m_title").innerHTML="Mantra #1";
       document.getElementById("mantra").innerHTML="1) Namo Tassa Bhagavato Arahato Samma Sambuddhassa";
-      document.getElementById("desc").innerHTML="TThis means, 'Honor to the Blessed One, the Exalted One, the fully Enlightened One.'";
+      document.getElementById("desc").innerHTML="This means, 'Honor to the Blessed One, the Exalted One, the fully Enlightened One.'";
 
       //alert(j);
       j=0;
