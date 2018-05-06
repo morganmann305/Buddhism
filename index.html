@@ -11,123 +11,12 @@
 <script src="js/buddhism.js"></script>
 
 <script>
-
-
-
   $(document).ready(function(){
     $('.slider').bxSlider();
-
-
-    //$("#txtcolor").on("change",function(){
-      //alert($("#txtcolor").val());
-    //$("#stimg").css("color",$("#txtcolor").val());
 });
-
-/*function ConfirmDialog(message){
-    $('<div></div>').appendTo('body')
-                    .html('<div><h6>'+message+'?</h6></div>')
-                    .dialog({
-                        modal: true, title: 'Delete message', zIndex: 10000, autoOpen: true,
-                        width: 'auto', resizable: false,
-                        buttons: {
-                            Yes: function () {
-                                // $(obj).removeAttr('onclick');
-                                // $(obj).parents('.Parent').remove();
-
-                                $('body').append('<h1>Confirm Dialog Result: <i>Yes</i></h1>');
-
-                                $(this).dialog("close");
-                            },
-                            No: function () {                           		                              $('body').append('<h1>Confirm Dialog Result: <i>No</i></h1>');
-
-                                $(this).dialog("close");
-                            }
-                        },
-                        close: function (event, ui) {
-                            $(this).remove();
-                        }
-                    });
-    };
-
-*/
-
-
 </script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC7G4tirS4p57ekFlthWBhgESCto1HeVXo">
     </script>
-    <style>
-    body {font-family: Arial, Helvetica, sans-serif;}
-
-    /* The Modal (background) */
-    .modal {
-        display: none; /* Hidden by default */
-        position: fixed; /* Stay in place */
-        z-index: 1; /* Sit on top */
-        padding-top: 100px; /* Location of the box */
-        left: 0;
-        top: 0;
-        width: 50%; /* Full width */
-        height: 100%; /* Full height */
-        overflow: auto; /* Enable scroll if needed */
-        background-color: rgb(0,0,0); /* Fallback color */
-        background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    }
-
-    /* Modal Content */
-    .modal-content {
-        position: relative;
-        background-color: black;
-        margin: auto;
-        padding: 0;
-        border: 1px solid #888;
-        width: 80%;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
-        -webkit-animation-name: animatetop;
-        -webkit-animation-duration: 0.4s;
-        animation-name: animatetop;
-        animation-duration: 0.4s
-    }
-
-    /* Add Animation */
-    @-webkit-keyframes animatetop {
-        from {top:-300px; opacity:0}
-        to {top:0; opacity:1}
-    }
-
-    @keyframes animatetop {
-        from {top:-300px; opacity:0}
-        to {top:0; opacity:1}
-    }
-
-    /* The Close Button */
-    .close {
-        color: white;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-    }
-
-    .close:hover,
-    .close:focus {
-        color: #000;
-        text-decoration: none;
-        cursor: pointer;
-    }
-
-    .modal-header {
-        padding: 2px 16px;
-        background-color: black;
-        color: white;
-    }
-
-    .modal-body {padding: 2px 16px;}
-
-    .modal-footer {
-        padding: 2px 16px;
-        background-color: black;
-        color: white;
-    }
-    </style>
 
 </head>
 
@@ -171,7 +60,6 @@
 <h1 class="space">Photo Gallery</h1>
 <p>These pictures show the common rituals practiced by Buddhists.</p>
 
-<!-- Slider HTML (change this to your own!)-->
 
 <div class="slider">
   <div>
@@ -230,25 +118,21 @@
 <p>A mantra is a phrase Buddhists say that will help them get attention from gods, get protection and make them feel powerful.</p>
 
 <p>Learn 10 mantras in Buddhism by clicking on Buddha!</p>
-<div id="myModal" class="modal">
+<div id="buddhismDialogueBox" class="dialogueBox">
 
-  <!-- Modal content -->
-  <div class="modal-content">
-    <div class="modal-header">
+  <div class="dialogueBox-content">
+    <div class="dialogueBox-header">
       <span class="close">Next</span>
       <h2 id="m_title">Mantra #1</h2>
     </div>
-    <div class="modal-body">
+    <div class="dialogueBox-body">
       <p id="mantra">1) Namo Tassa Bhagavato Arahato Samma Sambuddhassa</p>
       <p id="desc">This means, “Honor to the Blessed One, the Exalted One, the fully Enlightened One.”</p>
     </div>
-    <!--<div class="modal-footer">
-      <h3></h3>
-    </div> -->
   </div>
 
 </div>
-<!--1<button id="myBtn1"></button> -->
+
 <img src="images/buddha_statue.png"  id="myBtn"></img>
 
 

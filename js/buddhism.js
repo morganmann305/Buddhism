@@ -3,23 +3,22 @@
 
       var j=0;
 
-  var modal = document.getElementById('myModal');
+  var dialogueBox = document.getElementById('buddhismDialogueBox');
 
-  // Get the button that opens the modal
+
   var btn = document.getElementById("myBtn");
 
-  // Get the <span> element that closes the modal
+
   var span = document.getElementsByClassName("close")[0];
 
-  // When the user clicks the button, open the modal
+
   btn.onclick = function() {
-      modal.style.display = "block";
+      dialogueBox.style.display = "block";
   }
 
-  // When the user clicks on <span> (x), close the modal
+
   span.onclick = function() {
-    //alert(j);
-    //alert(j);
+
     if (j===0)
     {
 
@@ -94,20 +93,18 @@
       document.getElementById("mantra").innerHTML="1) Namo Tassa Bhagavato Arahato Samma Sambuddhassa";
       document.getElementById("desc").innerHTML="This means, 'Honor to the Blessed One, the Exalted One, the fully Enlightened One.'";
 
-      //alert(j);
+
       j=0;
-      //modal.style.display = "none";
+
     }
 
-  //document.getElementById("mantra").innerhtml="hello mantra";
 
-     // modal.style.display = "none";
   }
 
-  // When the user clicks anywhere outside of the modal, close it
+
   window.onclick = function(event) {
-      if (event.target == modal) {
-          modal.style.display = "none";
+      if (event.target == dialogueBox) {
+          dialogueBox.style.display = "none";
       }
   }
 
@@ -224,7 +221,7 @@
 
         for (i = 0; i < locations.length; i++)
         {
-          //RGB 64, 26, 57; 90 - 100%
+
 
       if(parseFloat(locations[i][3])>90 && parseFloat(locations[i][3])<100)
       {
@@ -241,7 +238,7 @@
     }
     else if(parseFloat(locations[i][3])>80 && parseFloat(locations[i][3])<=90)
     {
-        //RGB 130, 55, 116;
+
 
               marker = new google.maps.Marker({
               position: new google.maps.LatLng(locations[i][1], locations[i][2]),
@@ -255,7 +252,7 @@
     }
     else if(parseFloat(locations[i][3])>70 && parseFloat(locations[i][3])<=80)
     {
-        //RGB 174, 74, 155; 70 - 80%
+
 
          marker = new google.maps.Marker({
               position: new google.maps.LatLng(locations[i][1], locations[i][2]),
@@ -271,7 +268,7 @@
     }
     else if(parseFloat(locations[i][3])>50 && parseFloat(locations[i][3])<=70)
     {
-        //RGB 218, 93, 194
+
          marker = new google.maps.Marker({
               position: new google.maps.LatLng(locations[i][1], locations[i][2]),
               map: map,
@@ -289,7 +286,7 @@
 
     else if(parseFloat(locations[i][3])>30 && parseFloat(locations[i][3])<=50)
     {
-        //RGB 221, 118, 204
+
          marker = new google.maps.Marker({
               position: new google.maps.LatLng(locations[i][1], locations[i][2]),
               map: map,
@@ -305,7 +302,7 @@
     }
     else if(parseFloat(locations[i][3])>15 && parseFloat(locations[i][3])<=30)
     {
-      //RGB 226, 149, 216; 15 - 30%
+
 
        marker = new google.maps.Marker({
               position: new google.maps.LatLng(locations[i][1], locations[i][2]),
@@ -321,7 +318,7 @@
     }
     else if(parseFloat(locations[i][3])>5 && parseFloat(locations[i][3])<=15)
     {
-        //RGB 233, 182, 229;
+
 
          marker = new google.maps.Marker({
               position: new google.maps.LatLng(locations[i][1], locations[i][2]),
@@ -337,7 +334,7 @@
     }
     else if(parseFloat(locations[i][3])>1 && parseFloat(locations[i][3])<=5)
     {
-        //RGB 233, 182, 229; 5 -
+
          marker = new google.maps.Marker({
               position: new google.maps.LatLng(locations[i][1], locations[i][2]),
               map: map,
@@ -351,7 +348,6 @@
 
 
     }
-
 
 
           google.maps.event.addListener(marker, 'click', (function(marker, i) {
